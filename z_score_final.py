@@ -122,3 +122,12 @@ def test_case_1():
     print("Test 1 - Z-score of the least value in population 3 is:", least_z_score_p3)
 
 test_case_1()
+
+def test_case_2():
+	pop3_greatest = greatest(population3)
+	pop3_avg = mean(population3)
+	pop3_sd = stdev(population3, pop3_avg)
+	greatest_z_score_p3 = z_score(pop3_greatest, pop3_avg, pop3_sd)
+	print("Test 2 - Z-score of the greatest value in population 3 is:", greastes_z_score_p3)
+
+test_case_2()
